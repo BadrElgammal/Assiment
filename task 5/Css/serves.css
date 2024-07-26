@@ -1,0 +1,45 @@
+nav .home
+{
+    background-color: transparent;
+}
+nav .business
+{
+    background-color: #b79632;
+}
+
+
+.contaner
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #b79632;
+    padding: 100px 20px;
+}
+.contaner img
+{
+    height: 80px;
+    margin-bottom: 30px;
+}
+.part2
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 80px;
+    line-height: 30px;
+}
+.text-and-img
+{
+    max-width: 450px;
+    width: auto;
+    padding: 40px;
+}
+.contaner p
+{
+    color: white;
+    margin: 30px;
+}

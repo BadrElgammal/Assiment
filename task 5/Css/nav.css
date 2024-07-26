@@ -1,0 +1,116 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+ body
+ {
+    background-color: #181818;
+ }
+ ::-webkit-scrollbar
+ {
+    width: 10px;
+ }
+ ::-webkit-scrollbar-thumb
+ {
+    background-color: #b79632;
+    border-radius: 10px;
+ }
+ ::-webkit-scrollbar-track
+ {
+    background-color: white;
+ }
+
+
+
+
+nav
+{
+    width: 100vw;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+    position: fixed;
+    /* overflow: hidden; */
+}
+nav img
+{
+    height: 100%;
+    margin-left: 150px;
+}
+.links
+{
+    margin-right: 50px;
+    display: flex;
+}
+nav .home
+{
+    background-color: #b79632;
+}
+nav a
+{
+    height: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.toglar
+{
+    display: none;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.home:hover,.business:hover,.about:hover,.contact:hover
+{
+    background-color: #b79632;
+    cursor: pointer;
+}
+@media screen and (max-width: 900px) 
+{
+    nav 
+    {
+        position: relative;
+    }
+    nav img
+    {
+        margin-left: 20px;
+    }
+    .links
+    {
+        flex-direction: column;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        height: calc(100vh - 50px);
+        width: 300px;
+        position: absolute;
+        top: 50px;
+        right: 0;
+    }
+    nav a
+    {
+        height: 50px;
+    }
+    .toglar
+    {
+        display: flex;
+    }
+    .setteing-menu:hover .links
+    {
+         display: flex;
+    }
+
+}

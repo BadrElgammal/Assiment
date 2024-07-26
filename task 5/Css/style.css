@@ -1,119 +1,4 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Urbanist", sans-serif;
-}
- body
- {
-    background-color: #181818;
- }
- ::-webkit-scrollbar
- {
-    width: 10px;
- }
- ::-webkit-scrollbar-thumb
- {
-    background-color: #b79632;
-    border-radius: 10px;
- }
- ::-webkit-scrollbar-track
- {
-    background-color: white;
- }
 
-
-
-
-nav
-{
-    width: 100vw;
-    height: 50px;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: aliceblue;
-    position: fixed;
-}
-nav img
-{
-    height: 100%;
-    margin-left: 150px;
-}
-.links
-{
-    margin-right: 50px;
-    height: 100%;
-    display: flex;
-}
-nav .home
-{
-    background-color: #b79632;
-}
-nav a
-{
-    color: white;
-    text-decoration: none;
-    height: 100%;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-.toglar
-{
-    display: none;
-    align-items: center;
-    height: 50px;
-    padding: 10px;
-    cursor: pointer;
-    margin-right: 20px;
-}
-.home:hover,.business:hover,.about:hover,.contact:hover
-{
-    background-color: #b79632;
-    cursor: pointer;
-}
-@media screen and (max-width: 900px) 
-{
-    nav 
-    {
-        position: relative;
-    }
-    nav img
-    {
-        margin-left: 20px;
-    }
-    .links
-    {
-        flex-direction: column;
-        display: none;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-        height: calc(100vh - 50px);
-        width: 300px;
-        position: absolute;
-        top: 50px;
-        right: 0;
-    }
-    nav a
-    {
-        height: 50px;
-    }
-    .toglar
-    {
-        display: flex;
-    }
-    .setteing-menu:hover .links
-    {
-         display: flex;
-    }
-
-}
 
 
 
@@ -121,9 +6,9 @@ nav a
 
 .parent
 {
-    background-image: url(./images/pexels-photo-8693379.webp);
+    background-image: url(../images/pexels-photo-8693379.webp);
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     text-align: center;
     background-attachment: fixed;
     background-size: cover;
@@ -172,6 +57,7 @@ nav a
     margin-top: 30px;
     border: none;
     cursor: pointer;
+    transition: 1s;
 } 
 .button-photo:hover
 {
@@ -210,7 +96,7 @@ nav a
 
 .secion2
 {
-    width: 100vw;
+    /* width: 100vw; */
     height: auto;
     display: flex;
     align-items: center;
@@ -269,6 +155,15 @@ nav a
     width: 380px;
     padding: 10px;
 }
+.link a
+{
+    text-decoration: none;
+}
+.link img
+{
+    height:  20px;
+    width: 20px;
+}
 @media screen and (max-width :900px)
 {
     .secion2
@@ -303,7 +198,7 @@ nav a
 .member
 {
     margin: 100px 0px;
-    width: 100vw;
+    /* width: 100vw; */
     height:400px;
     background-color: #1b1b1b;
     display: flex;
@@ -353,7 +248,7 @@ nav a
 .logos
 {
     color:  #b79632;
-    width: 100vw;
+    /* width: 100vw; */
     text-align: center;
     display:flex;
     margin: 50px;
@@ -384,126 +279,4 @@ nav a
 .logos h1
 {
     font-size: 50px;
-}
-
-
-
-
-
-
-footer
-{
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    padding: 70px 0px;
-}
-footer img
-{
-    height: 50px;
-}
-
-.footer-part1 p
-{
-    width: 400px;
-    margin-top: 30px;
-}
-.logo-part1
-{
-    height: 100px;
-}
-
-.footer-logo-part2
-{
-    height:30px
-}
-.footer-phone-address
-{
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-.footer-logos
-{
-    display: flex;
-    justify-content: space-evenly;
-}
-.footer-logo
-{
-    padding: 15px;
-    background-color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-.facebook,.instagram,.map
-{
-    background-color: white;
-    transition: 2s;
-}
-.facebook:hover
-{
-    background-color: blue;
-}
-.instagram:hover
-{
-    background: linear-gradient(to bottom right, deeppink, purple);
-}
-.map:hover
-{
-    background: greenyellow;
-}
-
-.footer-part3-part2-part2
-{
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-.footer-logo-part3
-{
-    height: 50px;
-}
-footer h3
-{
-    margin-top: 35px;
-}
-footer h2
-{
-    color: #b79632;
-}
-@media screen and (max-width:900px)
-{
-    footer
-    {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .footer-parts
-    {
-        margin: 30px 0;
-    }
-}
-
-
-.team
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    background-color: black;
-    padding: 40px 0;
-    border-top: white solid 2px;
 }
