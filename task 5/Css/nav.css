@@ -36,7 +36,7 @@ nav
     justify-content: space-between;
     color: aliceblue;
     position: fixed;
-    /* overflow: hidden; */
+    z-index: 9999;
 }
 nav img
 {
@@ -81,7 +81,9 @@ nav a
 {
     nav 
     {
+        
         position: relative;
+        position: fixed;
     }
     nav img
     {
@@ -95,10 +97,11 @@ nav a
         align-items: center;
         background-color: black;
         height: calc(100vh - 50px);
-        width: 300px;
+        width: 100vw;
         position: absolute;
         top: 50px;
-        right: 0;
+        right: 0px;
+        margin-right: 0;
     }
     nav a
     {

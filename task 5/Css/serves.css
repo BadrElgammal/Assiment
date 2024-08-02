@@ -22,6 +22,10 @@ nav .business
     height: 80px;
     margin-bottom: 30px;
 }
+.contaner .titel
+{
+    text-align: center;
+}
 .part2
 {
     display: flex;
@@ -36,10 +40,10 @@ nav .business
 {
     max-width: 450px;
     width: auto;
-    padding: 40px;
+    padding: 25px;
 }
 .contaner p
 {
     color: white;
-    margin: 30px;
+    margin: 10px;
 }

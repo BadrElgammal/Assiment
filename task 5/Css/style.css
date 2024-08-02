@@ -1,7 +1,10 @@
 
 
 
-
+*
+{
+    font-family: "Urbanist", sans-serif;
+}
 
 
 .parent
@@ -96,15 +99,14 @@
 
 .secion2
 {
-    /* width: 100vw; */
-    height: auto;
+   width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    color: white;
     font-size: 20px;
-    margin-bottom: 100px;
+    color: white;
+
 }
 .secion2 h1
 {
@@ -120,22 +122,22 @@
 
 .secion2-div1
 {
-    width: 500px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    max-width: 480px;
+    width: auto;
+    padding: 40px;
 }
 
 
 .secion2-div2
 {
-    width: 480px;
+    max-width: 580px;
     height: 80%;
-    display:flex;
+    width: auto;
+    padding: 30px;
+    display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .secion2 img
@@ -147,12 +149,12 @@
 {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     padding: 15px;
 }
 .secion2-div2-part-text
 {
-    width: 380px;
+    max-width: 380px;
+    width: auto;
     padding: 10px;
 }
 .link a
@@ -164,32 +166,39 @@
     height:  20px;
     width: 20px;
 }
-@media screen and (max-width :900px)
+@media screen and (max-width :700px)
 {
-    .secion2
+    /* .secion2-div1,
+    .secion2-div2
     {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-    }
-    .secion2 h1
-    {
-    font-size: 30px;
-    }
-     .secion2 h2,a
-     {
-    font-size: 24px;
-    }
-    .secion2-div2-part-text
-    {
-        width: 400px;
-    }
-    .secion2 img
-    {
-        width: 50px;
-        height: 50px;
-    }
+        padding: 10px;
+    } */
+   .secion2 h1
+   {
+       font-size: 35px;
+   }
+   .secion2 h2,a
+   {
+       font-size: 20px;
+   }
+   .secion2 p 
+   {
+      font-size: 17px;
+   }
+   .secion2 img
+   {
+       width: 50px;
+       height: 50px;
+   }
+   .link img 
+   {
+       width: 15px;
+       height: 15px;
+   }
 }
+
+
+
 
 
 
@@ -197,6 +206,7 @@
 
 .member
 {
+    width: 100%;
     margin: 100px 0px;
     /* width: 100vw; */
     height:400px;
@@ -215,8 +225,10 @@
 .text
 {
     color: white;
-    width: 520px;
+    max-width: 600px;
+    width: auto;
     font-size: 25px;
+    padding: 0px 40px;
 }
 .years
 {
@@ -235,8 +247,7 @@
     }
     .text
     {
-        font-size: 20px;
-        width: 400px;
+        font-size: 18px;
     }
     .years
     {

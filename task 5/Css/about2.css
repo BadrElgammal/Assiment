@@ -19,20 +19,21 @@ nav .about
 }
 .iamge
 {
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
     border-radius: 10px;
+    margin-top: 30px;
 }
 .iamge img
 {
-    height: 350px;
+    height: 300px;
     border-radius: 10px;
     transition: 1s;
 }
 .iamge:hover img
 {
-    width: 120%;
+    transform: scale(1.2,1.2);
 }
 .section1 .contaner
 {
@@ -46,7 +47,7 @@ nav .about
     max-width: 450px;
     width: auto;
     text-align: center;
-    margin: 0px 50px;
+    margin: 0px 25px;
     line-height: 35px;
     color: #9b978c;
 }
@@ -124,8 +125,10 @@ nav .about
 }
 .section2 .part
 {
-    width: 550px;
-    height: 500px;
+    max-width: 550px;
+    width: auto;
+    min-height: 500px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,6 +148,14 @@ nav .about
 
 @media screen and (max-width :700px)
 {
+    .iamge img
+    {
+        width: 300px;
+    }
+    .section2 h1
+    {
+        font-size: 35px;
+    }
     .section1 .text
     {
         margin-top: 30px;

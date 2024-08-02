@@ -35,14 +35,14 @@ nav .business
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
 }
 .contaner .part2-text
 {
     max-width: 500px;
     width: auto;
     line-height: 30px;
+    margin: 35px 0px;
 }
 .contaner h2
 {
@@ -51,11 +51,11 @@ nav .business
 }
 .contaner p
 {
-    padding: 0px 50px;
+    padding: 0px 25px;
 }
 .link
 {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 .link a
 {
