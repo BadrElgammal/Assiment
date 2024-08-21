@@ -1,17 +1,7 @@
 //-----------------------------problem 1-----------------------
 function revarce(num)
 {
-    switch (num)
-    {
-        case 1:
-            return 0;
-            break;
-        case 0:
-            return 1;
-            break;
-        default:
-            return -1;
-    }
+    console.log(+(!num));
 }
 
 console.log(revarce(0));
