@@ -4,13 +4,13 @@ var productCategory=document.getElementById("productCategory");
 var productDesc=document.getElementById("productDesc");
 
 var productsContaner;
-if(localStorage.getItem("productList") === null)
+if(localStorage.getItem("productsList") === null)
 {
     productsContaner =[];
 }
 else
 {
-    productsContaner=JSON.parse(localStorage.getItem("productList"));
+    productsContaner=JSON.parse(localStorage.getItem("productsList"));
     displayProducts();
 }
 function addProduct()
@@ -23,7 +23,7 @@ function addProduct()
             Desc:productDesc.value
         };
         productsContaner.push(product);
-        localStorage.setItem("productList",JSON.stringify(productsContaner));
+        localStorage.setItem("productsList",JSON.stringify(productsContaner));
         clearform();
         displayProducts();
    
@@ -74,7 +74,7 @@ function chickEmpity()
 function deleteProducts(index) {
     productsContaner.splice(index , 1);
     displayProducts();
-    localStorage.setItem("productList", JSON.stringify(productsContaner));
+    localStorage.setItem("productsList", JSON.stringify(productsContaner));
   }
 
 
@@ -131,7 +131,7 @@ function saveUpdate(index)
     productsContaner[index].price=productPrice.value;
     productsContaner[index].category=productCategory.value;
     productsContaner[index].Desc=productDesc.value;
-    localStorage.setItem("productList", JSON.stringify(productsContaner));
+    localStorage.setItem("productsList", JSON.stringify(productsContaner));
     displayProducts();
     clearform();
     btnA.innerHTML = "Add Product"; // إعادة تعيين النص إلى "Add Product"
