@@ -137,3 +137,4 @@ function saveUpdate(index)
     btnA.innerHTML = "Add Product"; // إعادة تعيين النص إلى "Add Product"
     currentIndex = -1;
 }
+localStorage.clear();
